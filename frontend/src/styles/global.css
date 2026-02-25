@@ -1,0 +1,222 @@
+/* ========================
+   Brand Colors
+   ======================== */
+:root {
+  --eucalyptus: #CDD4B1;
+  --pistachio: #A8C686;
+  --peach: #F4A896;
+  --clay: #D6A77A;
+  --ivory: #FFFFF0;
+  --dark: #2E2E2E;
+}
+
+/* ========================
+   Global Styles
+   ======================== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--ivory);
+  color: var(--dark);
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  color: var(--dark);
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+/* ========================
+   Navbar
+   ======================== */
+nav {
+  background-color: var(--peach);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ========================
+   Containers
+   ======================== */
+.container {
+  padding: 60px 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* ========================
+   Buttons
+   ======================== */
+.btn {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.btn-primary {
+  background-color: var(--peach);
+  color: white;
+}
+
+.btn-secondary {
+  background-color: var(--pistachio);
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+/* ========================
+   Forms
+   ======================== */
+input, textarea, select {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* ========================
+   Home Hero Section
+   ======================== */
+.home-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 60px 80px;
+  background-color: var(--eucalyptus);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.hero-image {
+  width: 300px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* ========================
+   Booking Page
+   ======================== */
+.booking-page {
+  background: linear-gradient(to bottom right, var(--peach), var(--pistachio));
+  min-height: 100vh;
+  padding: 60px 40px;
+  color: var(--dark);
+}
+
+/* ========================
+   Achievements Page
+   ======================== */
+.achievements-page {
+  padding: 60px 40px;
+}
+
+.achievements-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.achievement-card {
+  background-color: var(--clay);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  flex: 1 1 250px;
+  min-width: 250px;
+  transition: 0.2s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ========================
+   Contact Page
+   ======================== */
+.contact-page {
+  padding: 60px 40px;
+}
+
+/* ========================
+   Responsive
+   ======================== */
+@media (max-width: 900px) {
+  .home-hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero-image {
+    width: 250px;
+    height: 320px;
+    margin-top: 30px;
+  }
+
+  .achievements-cards {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-text h1 {
+    font-size: 30px;
+  }
+
+  .hero-text p {
+    font-size: 15px;
+  }
+}
