@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 function Book() {
-
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -27,19 +26,21 @@ function Book() {
         Book an Appointment
       </h1>
 
-      <form onSubmit={handleSubmit} style={{
-        maxWidth: "600px",
-        display: "flex",
-        flexDirection: "column",
-        gap: "20px"
-      }}>
+      <form
+        onSubmit={handleSubmit}
+        style={{
+          maxWidth: "600px",
+          display: "flex",
+          flexDirection: "column",
+          gap: "20px"
+        }}
+      >
         <input
           type="text"
           name="name"
           placeholder="Full Name"
           onChange={handleChange}
           required
-          style={{ padding: "12px", borderRadius: "6px", border: "1px solid #ccc" }}
         />
 
         <input
@@ -48,7 +49,6 @@ function Book() {
           placeholder="Email Address"
           onChange={handleChange}
           required
-          style={{ padding: "12px", borderRadius: "6px", border: "1px solid #ccc" }}
         />
 
         <input
@@ -56,7 +56,6 @@ function Book() {
           name="date"
           onChange={handleChange}
           required
-          style={{ padding: "12px", borderRadius: "6px", border: "1px solid #ccc" }}
         />
 
         <textarea
@@ -64,7 +63,6 @@ function Book() {
           placeholder="Brief message..."
           rows="4"
           onChange={handleChange}
-          style={{ padding: "12px", borderRadius: "6px", border: "1px solid #ccc" }}
         />
 
         <button className="btn btn-primary" type="submit">

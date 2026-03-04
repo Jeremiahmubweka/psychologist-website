@@ -6,7 +6,7 @@ function Navbar() {
     <nav>
       <div>
         <Link to="/" style={{ fontWeight: "700", fontSize: "20px" }}>
-          Dr. Winnie Orodi
+          Inscapes Wellness
         </Link>
       </div>
 
